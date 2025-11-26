@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country & Weather Explorer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="globe-wrapper">
+                    <div class="globe">
+                        <div class="globe-inner">
+                            <span class="globe-icon">🌍</span>
+                        </div>
+                        <div class="orbit orbit-1"></div>
+                        <div class="orbit orbit-2"></div>
+                        <div class="orbit orbit-3"></div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="loading-title">Country & Weather Explorer</h1>
+            <p class="loading-subtitle">Discovering the world for you...</p>
+            <div class="loading-bar">
+                <div class="loading-progress" id="loading-progress"></div>
+            </div>
+            <div class="loading-percentage" id="loading-percentage">0%</div>
+            <div class="loading-facts">
+                <p class="loading-fact" id="loading-fact">Loading amazing features...</p>
+            </div>
+        </div>
+        <div class="loading-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="main-content" style="display: none;">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <!-- ...existing code... -->
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <!-- ...existing code... -->
+        </section>
+
+        <!-- COUNTRY EXPLORER SECTION -->
+        <section id="country-section" class="section">
+            <!-- ...existing code... -->
+        </section>
+
+        <!-- WEATHER EXPLORER SECTION -->
+        <section id="weather-section" class="section section-alt">
+            <!-- ...existing code... -->
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- ...existing code... -->
+        </footer>
+    </div>
+
+    <script src="js/loading.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
