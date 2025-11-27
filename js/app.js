@@ -131,11 +131,16 @@ function searchcon() {
     const countryInput = document.getElementById('country-input').value;
 
     if (!countryInput.trim()) {
-        alert("Please enter a country name!");
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Please enter a country name!",
+            // footer: '<a href="#">Why do I have this issue?</a>'
+        });
         return;
     }
 
-    fetch(`http://api.weatherapi.com/v1/current.json?key=24636336a68e4f859fa90222251211&q=${encodeURIComponent(countryInput)}`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=24636336a68e4f859fa90222251211&q=${encodeURIComponent(countryInput)}`)
         .then(response => response.json())
         .then(weatherData => {
             fetch(`https://restcountries.com/v3.1/name/${encodeURIComponent(weatherData.location.country)}`)
