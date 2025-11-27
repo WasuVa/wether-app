@@ -231,7 +231,10 @@ function searchWeather() {
         return;
     }
 
-    fetch(`https://api.weatherapi.com/v1/current.json?key=24636336a68e4f859fa90222251211&q=${encodeURIComponent(weatherInput)}&aqi=yes`)
+    const apiKey = "24636336a68e4f859fa90222251211";
+    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${encodeURIComponent(weatherInput)}&aqi=yes`;
+
+    fetch(url)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Weather data not found');
